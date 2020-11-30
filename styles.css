@@ -21,9 +21,9 @@ header {
   justify-content: space-between;
   background-color: #24292e;
   color: #fff;
-  height: 10vh;
+  height: auto;
   width: auto;
-  padding: 15px 5px 0 5px;
+  padding: 15px 6px 15px 6px;
 }
 header a {
   color: #fff;
@@ -63,24 +63,31 @@ i {
   object-fit: cover;
 }
 
-section {
+.second-nav {
   display: flex;
   border-bottom: 1px solid black;
-  height: 11vh;
+  height: auto;
+  position: sticky;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-section .empty-div {
+.second-nav .empty-div {
   flex: 1;
 }
-section .repo-nav {
+.second-nav .repo-nav {
   display: flex;
   flex: 2;
-  padding: 5px;
 }
-section .repo-nav a {
+.repo-nav div {
+  flex: 1;
 }
 
 main {
   display: flex;
+
+  margin: auto;
+}
+.profile {
 }
 
 .profile img {
@@ -90,4 +97,33 @@ main {
   border-radius: 50%;
   display: inline-block;
   object-fit: cover;
+}
+
+section .repo-list {
+  display: flex;
+  flex-direction: column;
+}
+.reposection-nav {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-val {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-val {
+  display: block;
 }

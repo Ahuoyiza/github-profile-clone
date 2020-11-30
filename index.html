@@ -32,7 +32,8 @@
                 alt="Sophia Abubakar"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
         </div>
     </header>
-    <section>
+
+    <div class="second-nav">
         <div class="empty-div"></div>
         <nav class="repo-nav">
             <div><a href="">icon Overview</div></a> 
@@ -40,7 +41,9 @@
             <div><a href="">icon Overview</a> </div>
             <div><a href="">icon Overview</a> </div>
         </nav>
-    </section>
+    </div>
+
+
     <main>
         
         <aside class="profile">
@@ -54,9 +57,66 @@
                 <p class="bio">Bio</p>
             </div>
         </aside>
-        <div class="repo-list">
-            <h1>repo list</h1>
-        </div>
+
+        <scection class="repo-list">
+
+
+            <div>
+            <div class="reposection-nav">
+
+                <div class="repo-search">
+                    <input type="text" placeholder="Find a repository...">
+                </div>
+
+                <div class="dropdown type-query">
+                    <div>Type: <span>All </span></div>
+                    <div class="dropdown-val">
+                        <div class="query-title" id="dropdown-content">
+                            <p>Select type</p>
+                            <span><i class="fa fa-times" aria-hidden="true"></i></span>
+                         </div>
+                        <div class="selected" id="dropdown-content"> All</div>
+                        <div class="" id="dropdown-content"> Public</div>
+                        <div class="" id="dropdown-content"> Private</div>
+                        <div class="" id="dropdown-content"> Sources</div>
+                        <div class="" id="dropdown-content"> Forks</div>
+                        <div class="" id="dropdown-content"> Archived</div>
+                        <div class="" id="dropdown-content"> Mirrors</div>
+
+                    </div>
+                </div>
+                
+
+                <div class="dropdown languageq-query">
+                    <div>Language: <span>All </span></div>
+                    <div class="dropdown-val">
+                        <div class="query-title" id="dropdown-content">
+                            <p>Select type</p>
+                            <span><i class="fa fa-times" aria-hidden="true"></i></span>
+                         </div>
+                        <div class="selected" id="dropdown-content"> All</div>
+                        <div class="" id="dropdown-content"> Public</div>
+                        <div class="" id="dropdown-content"> Private</div>
+                        <div class="" id="dropdown-content"> Sources</div>
+                        <div class="" id="dropdown-content"> Forks</div>
+                        <div class="" id="dropdown-content"> Archived</div>
+                        <div class="" id="dropdown-content"> Mirrors</div>
+
+                    </div>
+                </div>
+
+                <div class="new-repo">
+                    icon new
+                </div>
+
+            </div>
+            </div>
+
+
+            <div class="repo-list" id="repo-container">
+                <div id="repo-list"></div>
+            </div>
+        </section>
     </main>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/568c011d87.js" crossorigin="anonymous"></script>
